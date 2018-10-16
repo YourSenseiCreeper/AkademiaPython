@@ -29,8 +29,13 @@ class MyName:
     imie = "Piotr"
     nazwisko = "Wereszczynski"
 
-this_is_myName = MyName()
+class Person(MyName):
+    wallet = 0
+
+this_is_myName = Person()
 print(this_is_myName.imie, this_is_myName.nazwisko)
 
 this_is_myName.imie = "Damian"
-print(this_is_myName.imie, this_is_myName.nazwisko)
+print(this_is_myName.imie, this_is_myName.nazwisko, this_is_myName.wallet)
+
+print(this_is_myName)
