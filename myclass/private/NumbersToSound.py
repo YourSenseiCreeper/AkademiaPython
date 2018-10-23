@@ -7,14 +7,14 @@ print(ord(signToNumber))
 
 scale = ['0', 'C', 'D', 'E', 'F', 'G', 'A', 'H']
 noteAssignment = {
-        "C": "NoteC.wav",
-        "D": "NoteD.wav",
-        "E": "NoteE.wav",
-        "F": "NoteF.wav",
-        "G": "NoteG.wav",
-        "A": "NoteA.wav",
-        "H": "NoteH.wav",
-        "0": "NoteNull.wav"
+        "C": "/files/sounds/NoteC(2).wav",
+        "D": "/files/sounds/NoteD(2).wav",
+        "E": "/files/sounds/NoteE(2).wav",
+        "F": "/files/sounds/NoteF.wav",
+        "G": "/files/sounds/NoteG.wav",
+        "A": "/files/sounds/NoteA.wav",
+        "H": "/files/sounds/NoteH.wav",
+        "0": "/files/sounds/NoteNull.wav"
         }
 
 def ConvertToNotes(number):
@@ -41,6 +41,7 @@ for letter in word:
     for sign in scaleResult:
         print(sign)
         winsound.PlaySound(noteAssignment.get(sign, "C"), winsound.SND_FILENAME)
+        winsound.PlaySound()
         
 # for x in range(10):
 #     number = int(input("Podaj liczbe do przekonwertowania na dzwiek: "))
