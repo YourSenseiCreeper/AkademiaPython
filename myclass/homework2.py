@@ -8,5 +8,8 @@ class Car(Veihcle):
 class Audi(Car):
     pass
 
+class KupAuto:
+    auto = Audi()
+
 # Zadanie 2
 # ???
