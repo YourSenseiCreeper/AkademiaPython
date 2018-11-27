@@ -7,15 +7,15 @@ class Food(object):
         print("That's the Food class!")
 
     def __del__(self):
-        self.liquid
-        self.weight
-        self.volume
+        self.liquid = None
+        self.weight = None
+        self.volume = None
         print("All variables died (Food)!")
 
-    def isLiquid(self):
+    def is_liquid(self):
         return self.liquid
 
-    def getDencity(self):
+    def get_dencity(self):
         return self.weight/self.volume
 
 class Pizza(Food):
@@ -25,15 +25,15 @@ class Pizza(Food):
         print("That's the Pizza class!")
 
     def __del__(self):
-        self.acridiness
-        self.size
+        self.acridiness = None
+        self.size = None
         print("All variables died! (Pizza)")
 
-    def servePizza(self):
+    def serve_pizza(self):
         print("Here you are! That's "+self.size+" pizza!")
 
-    def refoundPizza(self):
-        print("I want a refound! This pizza is cold as the iceberg!")
+    def refound_pizza(self):
+        print("I want a refound! This pizza is cold as an iceberg!")
 
 class ChocolateBar(Food):
     def __init__(self, caloricityA, cocoaBeanContentA):
@@ -42,17 +42,18 @@ class ChocolateBar(Food):
         print("That's the ChocolateBar class!")
 
     def __del__(self):
-        self.caloricity
-        self.cocoaBeanContent
+        self.caloricity = None
+        self.cocoaBeanContent = None
         print("All variables died! (ChocolateBar)")
 
-    def getCaloricity(self):
+    def get_caloricity(self):
         return self.caloricity
 
-    def getCocoaBeanContent(self):
+    def get_cocoa_beans_content(self):
         return self.cocoaBeanContent
 
 
 my_bar = ChocolateBar(1000, 0.70)
 my_food = Food(False, 2.25, 0.05)
 my_pizza = Pizza("Mild", "Medium")
+my_pizza.serve_pizza()
