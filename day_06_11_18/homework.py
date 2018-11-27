@@ -1,3 +1,5 @@
+# !/usr/bin/env python3
+
 # Stwórz klasę dziedziczącą zmienne z klasy nadrzędnej
 # Stwórz klasę dziedziczącą metody z klasy nadrzędnej
 # Stwórz klasę która przeciąża metodę z klasy nadrzędnej i jednocześnie używa jej za pomocą słowa kluczowego super
